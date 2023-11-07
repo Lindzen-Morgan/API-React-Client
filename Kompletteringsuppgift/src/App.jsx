@@ -1,12 +1,11 @@
 import { useState, useEffect } from 'react';
-import '/App.css'; 
+import './App.css';
 
 function WeatherApp() {
   const [weatherData, setWeatherData] = useState(null);
 
   useEffect(() => {
-    // Fetch weather data when the component mounts
-    // Replace 'API_ENDPOINT' with the actual endpoint to fetch weather data
+    //placeholder URL API ENDPOINT
     fetch('API_ENDPOINT')
       .then(response => response.json())
       .then(data => setWeatherData(data))
